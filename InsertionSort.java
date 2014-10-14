@@ -41,10 +41,8 @@ package com.algorithms.sorting;
  * This class implements the Insertion Sort algorithm as seen on 
  * Introduction to Algorithms by Thomas H. Cormen, Charles E. Leiserson,
  * Ronald L. Rivest, Clifford Stein.
- * @author Thomas H. Cormen
- * @author Charles E. Leiserson
- * @author Ronald L. Rivest
- * @author Clifford Stein
+ * 
+ * @author Peter Jones
  * 
  * @since 1.7
  */
