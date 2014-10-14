@@ -1,14 +1,14 @@
 /*
- * Pseudocode:								cost	times
+ * Pseudocode:							cost		times
  * for j = 2 to A.length					c1		n
- * 	key = A[j]								c2		n - 1
+ * 	key = A[j]						c2		n - 1
  * 	// Insert A[j] into the sorted
  * 		sequence A[1..j - 1]				0
- * 	i = j - 1								c4		n - 1
+ * 	i = j - 1						c4		n - 1
  * 	while i > 0 and A[i] > key				c5		sum:from j = 2 to n:(tj)
- * 		A[i + 1] = A[i]						c6		sum:from j = 2 to n:(tj - 1)
- * 		i = i - 1							c7		sum:from j = 2 to n:(tj - 1)
- * 	A[i + 1] = key							c8		n - 1
+ * 		A[i + 1] = A[i]					c6		sum:from j = 2 to n:(tj - 1)
+ * 		i = i - 1					c7		sum:from j = 2 to n:(tj - 1)
+ * 	A[i + 1] = key						c8		n - 1
  * 
  * Input size: n (dependant on list size)
  * Running time: 
