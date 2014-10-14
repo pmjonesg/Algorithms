@@ -1,14 +1,14 @@
 /*
- * Pseudocode:							cost		times
+ * Pseudocode:								cost	times
  * for j = 2 to A.length					c1		n
- * 	key = A[j]						c2		n - 1
+ * 	key = A[j]								c2		n - 1
  * 	// Insert A[j] into the sorted
  * 		sequence A[1..j - 1]				0
- * 	i = j - 1						c4		n - 1
+ * 	i = j - 1								c4		n - 1
  * 	while i > 0 and A[i] > key				c5		sum:from j = 2 to n:(tj)
- * 		A[i + 1] = A[i]					c6		sum:from j = 2 to n:(tj - 1)
- * 		i = i - 1					c7		sum:from j = 2 to n:(tj - 1)
- * 	A[i + 1] = key						c8		n - 1
+ * 		A[i + 1] = A[i]						c6		sum:from j = 2 to n:(tj - 1)
+ * 		i = i - 1							c7		sum:from j = 2 to n:(tj - 1)
+ * 	A[i + 1] = key							c8		n - 1
  * 
  * Input size: n (dependant on list size)
  * Running time: 
@@ -174,7 +174,7 @@ public class InsertionSort {
 		for(int j = 0; j < A.length; j++) {
 			T key = A[j];
 			int i = j - 1;
-			while(i >= 0 && A[i].compareTo(key) <= 0) {
+			while(i >= 0 && A[i].compareTo(key) >= 0) {
 				A[i + 1] = A[i];
 				i--;
 			}
@@ -184,11 +184,13 @@ public class InsertionSort {
 
 	public static void main(String args[]) {
 		int[] b = {5, 2, 4, 6, 1, 3};
-		String[] c = { "john", "alice", "bob", "ronald"};
+		String[] c = { "john", "alice", "bob", "ron"};
 		char[] ch = {'a', 'g', 'j', 'r', 'o', 'l' };
 		
 		insertionSort(b);
 		insertionSort(c);
+		insertionSort(ch);
+
 		for(int i = 0; i < b.length; i++) {
 			System.out.print(b[i] + " ");
 		}
