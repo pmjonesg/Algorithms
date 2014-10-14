@@ -4,14 +4,10 @@ Algorithms
 Collection of Algorithms written in Java.
 The purpose of this repository is to serve as a library for future projects, and as a reference manual. In this description general algorithms will be analyzed, specific algorithms will have their respective description in the code.
 
-
-=========
 ### Index
 * Analysis of divide-and-conquer algorithms
 
-=========
-#### Analysis of divide-and-conquer algorithms
-==============================================
+####Analysis of divide-and-conquer algorithms
 
 Divide-and-conquer algorithms are characterized by 3 steps at each level of recursion:
 * **Divide** the problem into subproblems that resemble the original.
